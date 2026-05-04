@@ -45,11 +45,51 @@
 
 ---
 
+### 02 — SauceDemo Products & Cart Flow Testing
+**App:** [saucedemo.com](https://www.saucedemo.com)
+**Type:** Web application — E-commerce demo
+**Focus:** Product listing, sorting, cart management, and full checkout flow
+
+| Item | Details |
+|---|---|
+| Total test cases | 13 |
+| Pass | 13 |
+| Fail | 0 |
+| Bugs found | 0 |
+
+**What I tested:**
+- Product sort functionality (A-Z, Z-A, Price low-high, Price high-low)
+- Add single and multiple products to cart
+- Remove products from both product listing and cart pages
+- Cart contents accuracy (names, prices, quantities)
+- Full end-to-end checkout flow (step 1 form, order overview, order confirmation)
+- Checkout form validation (empty fields)
+- Price calculation verification (item total + tax = order total)
+
+**Notable observations:**
+> Checkout form validates fields sequentially (First Name first), consistent with login page behavior. Price calculations were verified manually — all totals correct. Cart badge updates in real time without page reload across all add/remove actions.
+
+📄 [View test cases](./02-saucedemo-products-cart/test-cases.xlsx)
+
+---
+
 ## 🐛 Bug Reports Summary
 
 | Bug ID | Title | App | Severity | Status |
 |---|---|---|---|---|
-| BUG-001 | Login fails when username is entered in uppercase | SauceDemo | Medium | Open |
+| BUG-001 | Login fails when username is entered in uppercase | SauceDemo Login | Medium | Open |
+
+---
+
+## 📊 Overall Stats
+
+| Metric | Count |
+|---|---|
+| Total test cases executed | 21 |
+| Total passed | 20 |
+| Total failed | 1 |
+| Total bugs documented | 1 |
+| Features tested | 2 |
 
 ---
 
@@ -59,7 +99,7 @@ This portfolio is actively being built as part of a structured 3-month QA learni
 
 - [x] ~~Set up portfolio repository~~
 - [x] ~~Project 1: Login page test cases (SauceDemo)~~
-- [ ] Project 2: End-to-end e-commerce flow (SauceDemo)
+- [x] ~~Project 2: Products & cart flow testing (SauceDemo)~~
 - [ ] Project 3: Mobile app testing
 - [ ] ISTQB Foundation preparation
 
